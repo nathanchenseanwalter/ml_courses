@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def random_vector(dim,elements):
+    rand_vec = np.random.uniform(-1,1,size=(elements,dim))
+    norms = np.transpose(np.tile(np.linalg.norm(rand_vec,axis=1),(dim,1)))
+    return rand_vec/norms
+
+elms = 10000
+dims = [10,20,50,100,250,500,1000,2000]
+fig, axs = plt.subplots(len(dims),1,figsize=(5,len(dims)*5))
+for idx,dim in enumerate(dims):
+    vec1 = random_vector(dim,elms)
+    vec2 = random_vector(dim,elms)
+    dot_prod = np.einsum("ij,ij->i",vec1,vec2)
+    dot_mean = np.mean(dot_prod)
+    dot_std = np.std(dot_prod)
+    
+    axs[idx].hist(dot_prod,bins=64)
+    axs[idx].set_title("dim="+str(dim)+", mean="+str(round(dot_mean,3))+", std="+str(round(dot_std,3)))
