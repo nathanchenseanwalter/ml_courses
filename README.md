@@ -33,6 +33,6 @@ Algebrically, if we let $A = (a_1,\dots,a_n)$ and $B = (b_1,\dots,b_n)$, then $(
 
 Geometrically is harder. We'll have to use hyperspheres. But if we keep this at low dimensions, we can directly compute with simple knowledge of calculus.
 
-2D Case. Let $A$ and $B$ be normalized vectors. $A\cdot B = |A||B|\cos\theta = \cos\theta$ on a 2D unit circle. Therefore $\text{Var}(A\cdot B) = \mathbb{E}[\cos^2\theta] - \mathbb{E}[\cos\theta]^2 = \frac{1}{2\pi}\int^{2\pi}_{0}\cos^2\theta\,d\theta - \frac{1}{2\pi}\int^{2\pi}_{0}\cos\theta\,d\theta = \frac{1}{2} - 0 = \frac{1}{2}$. Then $\sigma = \sqrt{\text{Var}} = \frac{1}{\sqrt{2}}$.
+2D Case. Let $A$ and $B$ be normalized vectors. $A\cdot B = |A||B|\cos\theta = \cos\theta$ on a 2D unit circle. Therefore $\sigma = \mathbb{E}[\cos^2\theta] - \mathbb{E}[\cos\theta]^2 = \frac{1}{2\pi}\int^{2\pi}_{0}\cos^2\theta\,d\theta - \frac{1}{2\pi}\int^{2\pi}_{0}\cos\theta\,d\theta = \frac{1}{2} - 0 = \frac{1}{2}$. Then $\sigma = \sqrt{\text{Var}} = \frac{1}{\sqrt{2}}$.
 
 3D Case. Using the same argument, this is now 3D so all the possible vector combinations will lie on a 3D unit sphere. $\text{Var}(A\cdot B) = \mathbb{E}[\cos^2\theta] - \mathbb{E}[\cos\theta]^2 = \frac{1}{4\pi}\int^{\pi}_{0}\cos^2\theta\sin\theta\,d\theta\int^{2\pi}_0\,d\phi - \frac{1}{4\pi}\int^{\pi}_{0}\cos\theta\sin\theta\,d\theta\int^{2\pi}_0\,d\phi = \frac{1}{3} - 0 = \frac{1}{3}$. Then $\sigma = \sqrt{\text{Var}} = \frac{1}{\sqrt{3}}$.
