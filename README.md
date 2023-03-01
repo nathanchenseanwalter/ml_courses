@@ -1,5 +1,5 @@
-# ml_courses
-Some interesting assignments and projects I did for ML courses
+# neural_networks_186B
+Interesting projects and assignments from Psych 186B
 
 ### normalized_random_dot
 
