@@ -1,0 +1,23 @@
+Predicting Undergraduate Dropout
+
+Wonjoon Choi, Nathaniel Chen
+
+The United States experiences 40% college dropout rate every year. With only 41% of
+students graduating after four years without delay (ThinkImpact, 2021). Educational failure, such
+as dropping out of school, is a major social issue that impacts the whole society. On the
+individual level, people with only a high school degree are approximately three times more likely
+to live in poverty when compared to people with a bachelor’s degree (EDI, 2021). And on the
+societal level, a lower education level can lead to problems with economic growth, employment,
+and productivity. Thus, it is important to prevent or aid students in need ahead of time so that
+endangered students can make their way to graduation.
+
+We would like to present a potential solution to this problem. Depending on the traits of a
+student, we want to present the numerical value of how likely a student is to drop out of school.
+So that higher numerical value would indicate the student is at a greater risk of dropping out. To
+achieve this, we found a dataset collected from the Polytechnic Institute of Portalegre. The data
+set includes over 25 traits of students and their enrollment status. First, we would like to find out
+which traits of a student is a better predictors of dropping out. Second, we would like to present
+a numerical value of how likely a student is to drop out. And lastly, we want to try out different
+machine learning models with their variations to find out the best-predicting model for this
+problem. If our investigation and ML model turns out to be successful, hopefully, we wish to
+expand our study to the UCLA community.
